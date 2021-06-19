@@ -230,7 +230,9 @@
                   display-4
                 "
               >
-                Streaming Sunlight Coconut Tree Dawn<br /><br /><br />
+                <span id="name" name="name"></span>
+
+                <br /><br /><br />
               </p>
             </div>
           </div>
@@ -279,6 +281,8 @@
       for (const param of params) {
         console.log(param);
       }
+
+      document.getElementById("name").value = params.get("name");
     </script>
   </body>
 </html>
