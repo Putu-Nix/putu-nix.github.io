@@ -222,13 +222,8 @@
                 src="assets/images/streaming-coconut-tree-sunlight-5d3-0514b-nosig.jpg"
                 alt="Photograph of Bali by Nick Burgoyne"
               /> -->
-
-              <img
-                id="filename"
-                name="filename"
-                src=""
-                alt="Photograph of Bali by Nick Burgoyne"
-              />
+              <!-- NEIL CODE START -->
+              <img id="filename" name="filename" />
 
               <p
                 class="
@@ -239,7 +234,7 @@
                 "
               >
                 <span id="name" name="name"></span>
-
+                <!-- NEIL CODE END  -->
                 <br /><br /><br />
               </p>
             </div>
@@ -280,19 +275,15 @@
     <script src="assets/theme/js/script.js"></script>
 
     <input name="animation" type="hidden" />
-
+    <!-- NEIL CODE START -->
     <script>
       const params = new URLSearchParams(window.location.search);
-      /*     params.has('test')
-    params.get('test') */
-
-      /*  for (const param of params) {
-        console.log(param);
-      } */
 
       document.getElementById("name").innerText = params.get("name");
       document.getElementById("filename").src =
         "assets/images/" + params.get("filename");
+      document.getElementById("filename").alt = params.get("name");
     </script>
+    <!-- NEIL CODE END  -->
   </body>
 </html>
