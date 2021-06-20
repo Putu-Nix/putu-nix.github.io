@@ -16,7 +16,12 @@
     />
     <meta name="description" content="" />
 
-    <title>Streaming Sunlight Coconut Tree Dawn</title>
+    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
+
+    <title id="name" name="name"></title>
+
+    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
+
     <link
       rel="stylesheet"
       href="assets/web/assets/mobirise-icons2/mobirise2.css"
@@ -234,7 +239,9 @@
                 "
               >
                 <span id="name" name="name"></span>
+
                 <!-- NEIL CODE END  -->
+
                 <br /><br /><br />
               </p>
             </div>
@@ -283,6 +290,9 @@
       document.getElementById("filename").src =
         "assets/images/" + params.get("filename");
       document.getElementById("filename").alt = params.get("name");
+      document.getElementById("name").title = params.get("name");
+
+      /* document.getElementById('YOURID').setAttribute('title', 'NEW TITLE'); */
     </script>
     <!-- NEIL CODE END  -->
   </body>
