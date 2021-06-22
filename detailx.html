@@ -16,11 +16,15 @@
     />
     <meta name="description" content="" />
 
-    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
+    <!--      <title>Nick Burgoyne - Photo Detail</title>  -->
 
-    <title id="name" name="name"></title>
+      <title id="titname" name="name"></title>
 
-    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
+    <!--     <title>Nick Burgoyne - Photo Detail</title> 
+    -->
+    
+
+ 
 
     <link
       rel="stylesheet"
@@ -58,6 +62,14 @@
       href="assets/mobirise/css/mbr-additional.css"
       type="text/css"
     />
+    <link
+    rel="stylesheet"
+    href="assets/css/nix.css"
+    type="text/css"
+  />
+
+
+
   </head>
   <body>
     <section class="menu cid-szUZ7zfVpw" once="menu" id="menu1-2r">
@@ -240,7 +252,10 @@
               >
                 <span id="name" name="name"></span>
 
-                <!--<span id="maintext" name="maintext"></span> -->
+                <h3 id="h3name" name="name"></h3>
+
+                <h3>Hello Hello Hello</h3>
+
 
                 <!-- NEIL CODE END  -->
 
@@ -288,19 +303,26 @@
     <!-- NEIL CODE START -->
     <script>
       const params = new URLSearchParams(window.location.search);
+      /*       for (const param of params) {
+        console.log(param);
+} */
 
       document.getElementById("name").innerText = params.get("name");
       document.getElementById("filename").src =
         "assets/images/" + params.get("filename");
       document.getElementById("filename").alt = params.get("name");
 
-      /*   document.getElementById("name").title = params.get("name"); */
-      /*  document.getElementById("maintext").innerText = params.get("maintext"); */
+      document.getElementById("titname").innerText = params.get("name");
+      document.getElementById("h3name").innerText = params.get("name");
+
+
     </script>
     <!-- NEIL CODE END  -->
   </body>
 </html>
 
 <!-- 
-  https://putu-nix.github.io/detail.html?name=Beautiful%20Rice%20Terraces%20Penebel&filename=lovely-terraces-5d3-9266c-nosig.jpg&maintext=This%20is%20a%20lot%20of%20text%20designed%20to%20fill%20the%20box%20and%20sdescribe%20what%20this%20image%20is%20all%20about
+  https://putu-nix.github.io/detail.html?name=Beautiful%20Rice%20Terraces,%20Penebel&filename=lovely-terraces-5d3-9266c-nosig.jpg
+  
+  &maintext=This%20is%20a%20lot%20of%20text%20designed%20to%20fill%20the%20box%20and%20sdescribe%20what%20this%20image%20is%20all%20about
  -->
