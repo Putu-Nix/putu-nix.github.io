@@ -16,15 +16,13 @@
     />
     <meta name="description" content="" />
 
-    <!--      <title>Nick Burgoyne - Photo Detail</title>  -->
+    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
 
-      <title id="titname" name="name"></title>
+      <title id="titletext" name="name"></title>
 
-    <!--     <title>Nick Burgoyne - Photo Detail</title> 
-    -->
+    <!-- <title>Nick Burgoyne - Photo Detail</title> -->
     
 
- 
 
     <link
       rel="stylesheet"
@@ -252,10 +250,12 @@
               >
                 <span id="name" name="name"></span>
 
-                <h3 id="h3name" name="name"></h3>
+                <h3 id="h3name" name="name" style="text-align:center" ></h3>
 
-                <h3>Hello Hello Hello</h3>
-
+                <h3 style="text-align:center">Hello Hello Hello</h3>
+                <BR>  
+                <span  id="maintext" style="text-align:center" font-family="Poiret One" name="maintext"></span> 
+                  
 
                 <!-- NEIL CODE END  -->
 
@@ -312,8 +312,9 @@
         "assets/images/" + params.get("filename");
       document.getElementById("filename").alt = params.get("name");
 
-      document.getElementById("titname").innerText = params.get("name");
+      document.getElementById("titletext").innerText = params.get("name");
       document.getElementById("h3name").innerText = params.get("name");
+      document.getElementById("maintext").innerText = params.get("maintext");
 
 
     </script>

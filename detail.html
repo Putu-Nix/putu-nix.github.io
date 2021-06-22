@@ -18,7 +18,7 @@
 
     <!-- <title>Nick Burgoyne - Photo Detail</title> -->
 
-    <title id="name" name="name"></title>
+    <title id="titletext" name="name"></title>
 
     <!-- <title>Nick Burgoyne - Photo Detail</title> -->
 
@@ -58,6 +58,8 @@
       href="assets/mobirise/css/mbr-additional.css"
       type="text/css"
     />
+
+    <link rel="stylesheet" href="assets/css/nix.css" type="text/css" />
   </head>
   <body>
     <section class="menu cid-szUZ7zfVpw" once="menu" id="menu1-2r">
@@ -227,7 +229,16 @@
                 src="assets/images/streaming-coconut-tree-sunlight-5d3-0514b-nosig.jpg"
                 alt="Photograph of Bali by Nick Burgoyne"
               /> -->
+
               <!-- NEIL CODE START -->
+
+              <h3
+                id="h3name"
+                name="name"
+                style="text-align: center"
+                font-family="Poiret One"
+              ></h3>
+
               <img id="filename" name="filename" />
 
               <p
@@ -238,9 +249,27 @@
                   display-4
                 "
               >
+                <br />
                 <span id="name" name="name"></span>
 
-                <!--<span id="maintext" name="maintext"></span> -->
+                -
+
+                <span
+                  id="maintext"
+                  style="text-align: center"
+                  font-family="Poiret One"
+                  name="maintext"
+                >
+                </span>
+
+                <a
+                  class="nixlink"
+                  href="https://nickburgoyne.com/nix-mp3/"
+                  target
+                  _blank
+                >
+                  Swish My Wand</a
+                >
 
                 <!-- NEIL CODE END  -->
 
@@ -293,6 +322,10 @@
       document.getElementById("filename").src =
         "assets/images/" + params.get("filename");
       document.getElementById("filename").alt = params.get("name");
+
+      document.getElementById("h3name").innerText = params.get("name");
+
+      document.getElementById("maintext").innerText = params.get("maintext");
 
       /*   document.getElementById("name").title = params.get("name"); */
       /*  document.getElementById("maintext").innerText = params.get("maintext"); */

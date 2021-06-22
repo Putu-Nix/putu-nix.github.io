@@ -1,6 +1,12 @@
-.h3 {
-  font-family: Poiret;
-  font-size: 13px;
-  color: #6600ff;
+h3 {
+  font-family: "Poiret One";
+  font-size: 33px;
+  color: #000000;
   text-align: center;
+}
+body {
+  font-family: "Poiret One";
+}
+nixlink {
+  text-decoration: underline;
 }
