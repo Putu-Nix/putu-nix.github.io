@@ -183,12 +183,12 @@
               </a>
               <a
                 class="iconfont-wrapper"
-                href="https://mobiri.se"
+                href="https://www.redbubble.com/people/PutuNix"
                 target="_blank"
               >
                 <span
                   class="p-2 mbr-iconfont mobi-mbri-shopping-cart mobi-mbri"
-                  style="color: rgb(255, 207, 0); fill: rgb(255, 207, 0)"
+                  style="color: rgb(255, 81, 0); fill: rgb(255, 0, 0)"
                 ></span>
               </a>
             </div>
@@ -262,14 +262,29 @@
                 >
                 </span>
 
+                <!-- <a
+                  class="nixlink"
+                  href="https://nickburgoyne.com/nix-mp3/"
+                  target
+                  _blank
+                >
+                  Click to Buy!</a
+                >
+ -->
                 <a
                   class="nixlink"
                   href="https://nickburgoyne.com/nix-mp3/"
                   target
                   _blank
                 >
-                  Swish My Wand</a
+                  <br />
+                  <br />
+
+                  Click to Buy as Prints, Posters, on Mugs and T-Shirts and
+                  Other Merch!</a
                 >
+
+                <span id="exturl" name="exturl"></span>
 
                 <!-- NEIL CODE END  -->
 
@@ -283,9 +298,8 @@
     <section
       style="
         background-color: #fff;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-          'Helvetica Neue', Arial, sans-serif;
-        color: #aaa;
+        font-family: 'Poiret One' sans-serif;
+        color: rgb(0, 0, 0);
         font-size: 12px;
         padding: 0;
         align-items: center;
@@ -319,13 +333,17 @@
       const params = new URLSearchParams(window.location.search);
 
       document.getElementById("name").innerText = params.get("name");
+
       document.getElementById("filename").src =
         "assets/images/" + params.get("filename");
+
       document.getElementById("filename").alt = params.get("name");
 
       document.getElementById("h3name").innerText = params.get("name");
 
       document.getElementById("maintext").innerText = params.get("maintext");
+
+      document.getElementById("exturl").innerText = params.get("exturl");
 
       /*   document.getElementById("name").title = params.get("name"); */
       /*  document.getElementById("maintext").innerText = params.get("maintext"); */
@@ -337,3 +355,4 @@
 <!-- 
   https://putu-nix.github.io/detail.html?name=Beautiful%20Rice%20Terraces%20Penebel&filename=lovely-terraces-5d3-9266c-nosig.jpg&maintext=This%20is%20a%20lot%20of%20text%20designed%20to%20fill%20the%20box%20and%20sdescribe%20what%20this%20image%20is%20all%20about
  -->
+<!-- file:///C:/Users/Nick/Documents/GitHub/putu-nix.github.io/detail.html?name=Ben%27s%20Rice%20Terraces%20Penebel&filename=lovely-terraces-5d3-9266c-nosig.jpg&maintext=To%20make%20the%20grid%20responsive,%20there%20are%20five%20grid%20breakpoints,%20one%20for%20each%20responsive%20breakpoint:%20all%20breakpoints%20(extra%20small),%20small,%20medium,%20large,%20and%20extra%20large.%20Grid%20breakpoints%20are%20based%20on%20minimum%20width%20media%20queries,%20meaning%20they%20apply%20to%20that%20one%20breakpoint%20and%20all%20those%20above%20it%20(e.g.,%20.col-sm-4%20applies%20to%20small,%20medium,%20large,%20and%20extra%20large%20devices,%20but%20not%20the%20first%20xs%20breakpoint). -->
